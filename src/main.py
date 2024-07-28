@@ -65,4 +65,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     # Call the main function with the image path
-    ocr(args.image_path)
+    data=ocr(args.image_path)
+    print_data(data)
