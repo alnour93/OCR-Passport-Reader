@@ -39,7 +39,7 @@ The **OCR Passport Reader** is a Python-based tool designed to extract and proce
       ```bash
       chmod +x setup.sh  # Make the script executable
       ./setup.sh
-
+       ```
       The setup.sh script will:
 
       Update package lists.
