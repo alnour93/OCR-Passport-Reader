@@ -1,0 +1,6 @@
+pytesseract
+easyocr
+PassportEye
+keras_ocr
+pyspellchecker
+nltk
