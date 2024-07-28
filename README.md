@@ -33,6 +33,18 @@ The **OCR Passport Reader** is a Python-based tool designed to extract and proce
       ```bash
       pip install -r requirements.txt
       ```
+
+      Run the `setup.sh` script to install necessary system packages and Python dependencies:
+
+      ```bash
+      chmod +x setup.sh  # Make the script executable
+      ./setup.sh
+
+      The setup.sh script will:
+
+      Update package lists.
+      Install Tesseract OCR.
+
 ## Usage
 
 1. **Prepare the Image**
