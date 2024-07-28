@@ -42,8 +42,7 @@ The **OCR Passport Reader** is a Python-based tool designed to extract and proce
        ```
       The setup.sh script will:
 
-      Update package lists.
-      Install Tesseract OCR.
+      Update package lists and Install Tesseract OCR.
 
 ## Usage
 
