@@ -5,6 +5,9 @@ from passporteye import read_mrz
 import easyocr
 from dateutil import parser
 import datetime
+
+# Load OCR engine (easyOCR)
+reader = easyocr.Reader(lang_list=['en'], gpu=True)  # Enable GPU if available
 def parse_date(string, fix_year=False):
     """
     Parses a date string and optionally fixes the year if it's in the future.
