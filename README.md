@@ -60,18 +60,6 @@ The **OCR Passport Reader** is a Python-based tool designed to extract and proce
 
     Replace `path_to_your_image` with the path to your passport image file.
 
-## Code Structure
-
-- `src/main.py`: Main script to run the OCR processing.
-- `utils/utils.py`: Helper functions for MRZ processing and data extraction.
-
-## Functions
-
-- **`ocr(img_name)`**: Extracts and processes MRZ data from the passport image using EasyOCR.
-- **`process_mrz_type1(lines)`**: Processes MRZ lines of type 1.
-- **`process_mrz_type2(lines)`**: Processes MRZ lines of type 2.
-- **`process_mrz_type3(lines)`**: Processes MRZ lines of type 3.
-- **`print_data(data)`**: Prints extracted data in a formatted manner.
 
 ## Example Output
 
