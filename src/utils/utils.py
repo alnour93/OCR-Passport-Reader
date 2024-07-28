@@ -1,6 +1,8 @@
 import os
 import string as st
 import cv2
+import matplotlib.image as mpimg
+import matplotlib.pyplot as plt
 from passporteye import read_mrz
 import easyocr
 from dateutil import parser
