@@ -4,3 +4,5 @@ PassportEye
 keras_ocr
 pyspellchecker
 nltk
+fastapi 
+uvicorn
