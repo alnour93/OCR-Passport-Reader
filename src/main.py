@@ -2,6 +2,9 @@ import os
 import cv2
 import numpy as np
 import easyocr
+import cv2
+import matplotlib.image as mpimg
+import matplotlib.pyplot as plt
 from passporteye import read_mrz
 import argparse
 from utils.utils import parse_date, clean, get_gender, print_data, process_mrz_type1, process_mrz_type2, process_mrz_type3
