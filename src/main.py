@@ -5,9 +5,6 @@ import easyocr
 from passporteye import read_mrz
 from utils.utils import parse_date, clean, get_gender, print_data, process_mrz_type1, process_mrz_type2, process_mrz_type3
 
-# Load OCR engine (easyOCR)
-reader = easyocr.Reader(lang_list=['en'], gpu=True)  # Enable GPU if available
-
 def ocr(img_name):
     """
     Extracts and processes personal information from the passport image.
