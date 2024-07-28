@@ -3,6 +3,7 @@ import cv2
 import numpy as np
 import easyocr
 from passporteye import read_mrz
+import argparse
 from utils.utils import parse_date, clean, get_gender, print_data, process_mrz_type1, process_mrz_type2, process_mrz_type3
 
 # Load OCR engine (easyOCR)
@@ -49,8 +50,15 @@ def ocr(img_name):
     # Clean up temporary image file
     os.remove(temp_image_path)
     return user_info
-    # Example usage
 if __name__ == "__main__":
-    image_path = 'path_to_your_image.jpg'  # Replace with your image path
-    data = ocr(image_path)
-    print_data(data)
+    # Initialize argument parser
+    parser = argparse.ArgumentParser(description="OCR Passport Reader")
+    
+    # Add argument for image path
+    parser.add_argument('--image_path', type=str, required=True, help='Path to the passport image')
+    
+    # Parse arguments
+    args = parser.parse_args()
+    
+    # Call the main function with the image path
+    ocr(args.image_path)
